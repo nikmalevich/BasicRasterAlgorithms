@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="711.0" prefWidth="904.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <ChoiceBox fx:id="choiceBox" layoutX="47.0" layoutY="63.0" onAction="#onSelect" prefHeight="25.0" prefWidth="200.0" />
+    <Pane fx:id="inputPane" layoutX="45.0" layoutY="103.0" prefHeight="129.0" prefWidth="200.0">
+        <TextField layoutX="35.0" layoutY="27.0" prefHeight="25.0" prefWidth="49.0" fx:id="x0TextField" />
+        <Label layoutX="14.0" layoutY="29.0" text="x0">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <TextField fx:id="y0TextField" layoutX="121.0" layoutY="27.0" prefHeight="25.0" prefWidth="49.0" />
+        <Label layoutX="100.0" layoutY="29.0" text="y0">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Pane fx:id="lineInputPane" layoutY="65.0" prefHeight="44.0" prefWidth="200.0">
+            <TextField layoutX="35.0" layoutY="10.0" prefHeight="25.0" prefWidth="49.0" fx:id="x1TextField" />
+            <Label layoutX="14.0" layoutY="12.0" text="x1">
+                <font>
+                    <Font size="15.0" />
+                </font>
+            </Label>
+            <TextField fx:id="y1TextField" layoutX="121.0" layoutY="10.0" prefHeight="25.0" prefWidth="49.0" />
+            <Label layoutX="100.0" layoutY="12.0" text="y1">
+                <font>
+                    <Font size="15.0" />
+                </font>
+            </Label>
+        </Pane>
+        <Pane fx:id="circleInputPane" layoutY="65.0" prefHeight="44.0" prefWidth="200.0">
+            <TextField fx:id="rTextField" layoutX="35.0" layoutY="10.0" prefHeight="25.0" prefWidth="49.0" />
+            <Label layoutX="14.0" layoutY="12.0" text="r">
+                <font>
+                    <Font size="15.0" />
+                </font>
+            </Label>
+        </Pane>
+    </Pane>
+    <Button fx:id="drawButton" layoutX="92.0" layoutY="232.0" mnemonicParsing="false" onAction="#onDrawButtonClick" prefHeight="25.0" prefWidth="110.0" text="Отрисовать" />
+    <Label layoutX="77.0" layoutY="27.0" prefHeight="17.0" prefWidth="158.0" text="Выберите алгоритм" textAlignment="CENTER">
+        <font>
+            <Font size="15.0" />
+        </font>
+    </Label>
+    <Label layoutX="747.0" layoutY="-1.0" text="x">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </Label>
+    <Label layoutX="245.0" layoutY="347.0" rotate="-1.7" text="y">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </Label>
+    <Pane layoutX="188.0" layoutY="334.0" prefHeight="25.0" prefWidth="158.0" rotate="90.0">
+        <children>
+            <Line endX="100.0" fill="#251c1c" layoutX="55.0" layoutY="13.0" startX="-11.0" />
+            <Line endX="101.70709228515625" endY="2.29290771484375" layoutX="55.0" layoutY="11.0" startX="83.0" startY="-6.0" />
+            <Line endX="102.0" endY="-16.0" layoutX="54.0" layoutY="30.0" startX="84.0" startY="-10.0" />
+        </children>
+    </Pane>
+    <Pane layoutX="657.0" layoutY="12.0" prefHeight="25.0" prefWidth="158.0">
+        <children>
+            <Line endX="100.0" fill="#251c1c" layoutX="55.0" layoutY="13.0" startX="-11.0" />
+            <Line endX="101.70709228515625" endY="2.29290771484375" layoutX="55.0" layoutY="11.0" startX="83.0" startY="-6.0" />
+            <Line endX="102.0" endY="-16.0" layoutX="54.0" layoutY="30.0" startX="84.0" startY="-10.0" />
+        </children>
+    </Pane>
+    <GridPane fx:id="gridPane" layoutX="283.0" layoutY="40.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="401.0" prefWidth="565.0" />
+    <Label layoutX="250.0" layoutY="14.0" text="(0,0)">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </Label>
+    <ListView layoutX="101.0" layoutY="477.0" prefHeight="200.0" prefWidth="703.0" fx:id="listView"/>
+    <Label layoutX="101.0" layoutY="441.0" text="Рассчеты">
+        <font>
+            <Font size="18.0" />
+        </font>
+    </Label>
+</AnchorPane>
